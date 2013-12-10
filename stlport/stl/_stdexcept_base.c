@@ -57,7 +57,7 @@ __Named_exception::__Named_exception(const __Named_exception& __x) {
       _M_name = _M_static_name;
     }
     else {
-      *(local_cast(size_t*, &_M_static_name[0])) = __size * sizeof(char);
+      *(local_cast(&_M_static_name[0])) = __size * sizeof(char);
     }
   }
   else {
